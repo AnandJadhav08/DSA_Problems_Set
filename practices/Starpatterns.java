@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Starpatterns {
+public class Starpatterns {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Stringquestion {
+public class Stringquestion {
 
     public static void main(String[] args) {
         System.out.println("zzzzzzzzzzzzzzzzzz Count String With Space zzzzzzzzzzzzzzzzz");
@@ -51,7 +51,7 @@ class Stringquestion {
         System.out.println();
 
 
-         System.out.println("zzzzzzzzzzzzzzzzzz Count Vowels in String zzzzzzzzzzzzzzzzz");
+        System.out.println("zzzzzzzzzzzzzzzzzz Count Vowels in String zzzzzzzzzzzzzzzzz");
         boolean[] isVowel1 = new boolean[256];
         isVowel1['a'] = isVowel1['e'] = isVowel1['i'] = isVowel1['o'] = isVowel1['u'] = true;
         isVowel1['A'] = isVowel1['E'] = isVowel1['I'] = isVowel1['O'] = isVowel1['U'] = true;
@@ -64,7 +64,7 @@ class Stringquestion {
 
         for (int i = 0; i < str3.length(); i++) {
             
-            if (isVowel[str3.charAt(i)]) {
+            if (isVowel1[str3.charAt(i)]) {
                count3++;
             
             }
@@ -72,6 +72,37 @@ class Stringquestion {
         System.out.println("Number of Characters: " + count3);
         System.out.println();
 
+                
+        System.out.println("zzzzzzzzzzzzzzzzzz Reverse the String zzzzzzzzzzzzzzzzz");
+        System.out.println();
+        System.out.println("zzzzzzzzzzzz Method 1 Using reverse() function zzzzzzzzzzz");
+        System.out.println("Enter the String: ");
+        String str4 = sc.nextLine();
+        
+        String reversed = new StringBuilder(str4).reverse().toString();
+        System.out.println("Reverse String: "+ reversed);
+        System.out.println();
+        System.out.println("zzzzzzzzzzzz Method 2 Using TWO POINTER  zzzzzzzzzzz");
+        System.out.println("Enter the String: ");
+        String str5 = sc.nextLine();
+
+        char[] arr = str5.toCharArray();
+
+        int left = 0; 
+        int right = arr.length - 1 ; 
+
+        while (left < right) { 
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        String reverse = new String(arr);
       
+        System.out.println("Reverse String: "+ reverse);
+        System.out.println();
     }
 }
