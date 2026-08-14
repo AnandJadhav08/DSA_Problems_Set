@@ -104,5 +104,6 @@ public class Stringquestion {
       
         System.out.println("Reverse String: "+ reverse);
         System.out.println();
+        sc.close();
     }
 }

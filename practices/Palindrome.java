@@ -18,6 +18,7 @@ public class Palindrome {
         left++;
         right--;
     }
-      System.out.println("Given String Palindrome is: "+ isPalindrome);  
+      System.out.println("Given String Palindrome is: "+ isPalindrome); 
+      sc.close(); 
     }
 }
