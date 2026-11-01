@@ -14,9 +14,10 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    for (i = 1; i < n; i++)
+    // Logic Of Bubble Sorting
+    for (i = 0; i < n - 1; i++)
     {
-        for (j = 0; j < n - i; j++)
+        for (j = 0; j < n - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
@@ -26,9 +27,11 @@ int main()
             }
         }
     }
+
     printf("\n Sorted Elements :");
-    for(j = 0; j < n; j++){
-        printf("%d ",arr[j]);
+    for (j = 0; j < n; j++)
+    {
+        printf("%d ", arr[j]);
     }
-        return 0;
+    return 0;
 }
